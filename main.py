@@ -8,7 +8,7 @@ async def welcome() -> str:
 
 @app.get("/user")
 async def user_predator(username: str, age: int) -> dict:
-    return {"Информация о пользователе": "Имя": username, "Возраст": age}
+    return {"Информация о пользователе:" "Имя": username, "Возраст": age}
 
 @app.get("/user/admin")
 async def welcome_admin() -> str:
