@@ -8,7 +8,7 @@ async def welcome():
 
 @app.get("/user")
 async def user_predator(username: str, age: int):
-    return {"Информация о пользователе:" "Имя": username, "Возраст": age}
+    return f"Информация о пользователе: Имя: {username}, Возраст: {age}"
 
 @app.get("/user/admin")
 async def welcome_admin():
